@@ -75,6 +75,52 @@ header
   }
   nav
   {
-
+    display: flex;
+    align-items: center;
+    ul
+    {
+      display: flex;
+      list-style-type: none;
+      gap: 5px;
+      li
+      {
+        display: inline-block;
+        a
+        {
+          display: inline-block;
+          padding: 10px 20px;
+          color: var(--base);
+          &:hover
+          {
+            background-color: var(--base-100);
+            border-radius: 10px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 786px) 
+  {
+    nav
+    {
+      ul
+      {
+        display: none;
+      }
+      .mobile-toggle
+      {
+        /*display: none;*/
+        color: var(--base-800);
+        padding: 10px;
+        @media(max-width: 786px)
+        {
+          display: inline-block;
+          position: absolute;
+          top: 20px;
+          right: 15px;
+        }
+      }
+    } 
   }
 }
