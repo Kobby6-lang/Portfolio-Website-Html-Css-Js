@@ -12,3 +12,25 @@ body
     font-style: normal;
     font-size: 20px;
 }
+header
+{
+  padding: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  max-width: 1440px; /* Set the max-width */
+  .logo-holder
+  {
+    .logo
+    {
+
+    }
+    .logo-text
+    {
+
+    }
+  }
+  nav
+  {
+
+  }
+}
