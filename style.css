@@ -129,10 +129,41 @@ header {
 	}
 }
 
+.container
+{
+  max-width: 1440px;
+  margin: auto;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom:30px;
+
+  @media (max-width: 1440px)
+{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+}
+
+.button
+{
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--blue);
+  color: var(--base-100);
+  border-radius: 10px;
+
+  &:hover
+  {
+    text-decoration: none;
+    background-color: var(--base-800);
+  }
+}
+
 .hero
 {
   display: flex;
-  margin-top: 30px;
   .hero-blue
   {
     flex: 1;
